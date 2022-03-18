@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+    ---background-primary-color : #F19C78;
+    ---background-secondary-color : #EDD8D0;
+    ---background-third-color : #F7E4DD;
+    ---background-fourth-color :  #FFF3F3;
+    ---font-color :  rgb(17, 17, 17);
+    ---fontsize--h : 1.5rem;
+    ---fontsize--nav : 1rem;
+    ---font-family : 'Poppins', sans-serif;
+    ---border-radius : 3%;
+    ---border-shadow : -10px 9px 29px -9px rgba(74,74,74,0.87);
+        
+}
+
+body{
+    font-family: var(---font-family);
+    font-weight: 300;
+    color : var(---font-color);
+    width: 100%;
+    
+}
+
+
+
+/* ************************************** NAV **************************************** */
+ li>a{
+    text-decoration: none;
+    color: var(---font-color);
+    font-weight: 400;
+    
+ }
+
+li{
+    padding: 0.3em;
+    
+}
+
+a:hover{
+    color: var(---background-fourth-color);
+}
+
+
+nav {
+    display: flex;
+    background-color: var(---background-primary-color);   
+    font-size: var(---fontsize--nav); 
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    
+}
+
+
+.logo_nav {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+ul {
+    list-style: none;
+    justify-content: end;
+    margin-right: 1.5rem;
+}
+
+/* ****************************************HEADER************************************************** */
+
+header { /** Si on veut faire un bg image et le centrer*/
+    height: 23rem;
+    background-image: url('../../assets/images/photo7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    opacity: 80%;
+    display: flex;
+    
+}
+
+
+
+.logo_header{
+    
+    max-height: 25rem;
+    max-width: 25rem;
+    margin: auto;
+}
+
+
+/* *******************************************FOOTER***********************************************\ */
+
+footer {
+    background-color: var(---background-primary-color);
+    /** Pour fixer notre footer vers le bas*/
+    position:absolute;
+    bottom: 0;
+    width:100%;
+   
+}
+
+footer>img {
+    width: 30px;
+    height: 30px;
+}
+footer>#infos{
+    
+    height:70%;
+    display :flex;
+    flex-direction : column;
+    gap: 1em;
+    font-size: 0.8em;
+    padding: 2em;
+
+
+}
+.bloc {
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.bloc>h3{
+    color: var(---background-third-color);
+}
+
+
+
+.container{
+    background-color: var(---background-secondary-color);
+    font-size: 0.6em;
+}
+
+/* ****************************************** MEDIA DESKTOP********************************************** */
+
+
+@media screen and (min-width: 480px) {
+
+    ul {
+        display: flex;
+        font-size: var(---fontsize--h);
+        gap: 2em;
+        padding-right: 2rem;
+        
+
+    }
+
+    footer>#infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+.bloc{
+    
+}
+
+
+
+
+}
