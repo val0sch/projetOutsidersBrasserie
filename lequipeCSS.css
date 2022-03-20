@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+:root {
+  ---background-primary-color: #f19c78;
+  ---background-secondary-color: #edd8d0;
+  ---background-third-color: #f7e4dd;
+  ---background-fourth-color: #fff3f3;
+  ---font-color: rgb(73, 73, 73);
+  ---fontsize--h: 1.5rem;
+  ---fontsize--nav: 1rem;
+  ---font-family: "Poppins", sans-serif;
+  ---border-radius: 3%;
+  ---border-shadow: -10px 9px 29px -9px rgba(74, 74, 74, 0.87);
+}
+
+/* ******************************L' EQUIPE***************************** */
+body {
+  background-color: var(---background-third-color);
+
+  font-family: "Libre Baskerville";
+  color: var(---font-color);
+}
+
+section p:first-child {
+  text-align: center;
+  color: var(---font-color);
+  margin: 5rem 0 5rem 0;
+  font-size: var(---fontsize--h);
+}
+
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  border: 5px solid black;
+  color: var(---font-color);
+}
+.card {
+  border-radius: var(---border-radius);
+  background-color: var(---background-secondary-color);
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  height: 50vh;
+  margin: 1rem;
+  border: 4px solid green;
+}
+.card img {
+  border-top-left-radius: var(---border-radius);
+  border-top-right-radius: var(---border-radius);
+}
+
+.card-picture {
+  height: 192.1px;
+}
+.card-infos {
+}
+.card-infos > h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f19c78;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+.card-infos p {
+  padding: 1em 1rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  height: auto;
+}
+.card-infos em {
+  font-size: 0.7rem;
+  color: rgb(95, 95, 95);
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    width: 40vh;
+    height: 60vh;
+    margin: 3rem;
+  }
+  .card-picture {
+    height: 297.59px;
+  }
+}
