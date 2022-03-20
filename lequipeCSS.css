@@ -21,68 +21,93 @@ body {
   color: var(---font-color);
 }
 
+header {
+  /** Si on veut faire un bg image et le centrer*/
+  height: 23rem;
+  background-image: url("../../assets/images/photo8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 80%;
+  opacity: 80%;
+  display: flex;
+}
+
 section p:first-child {
   text-align: center;
   color: var(---font-color);
-  margin: 5rem 0 5rem 0;
+  margin: 3rem 0 0rem 0;
+  line-height: 2;
   font-size: var(---fontsize--h);
 }
 
-#cardsContainer {
+.cards {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
-  border: 5px solid black;
   color: var(---font-color);
+  margin: 2rem 0;
 }
 .card {
   border-radius: var(---border-radius);
+  box-shadow: var(---border-shadow);
   background-color: var(---background-secondary-color);
   display: flex;
   flex-direction: column;
   width: 30vh;
   height: 50vh;
   margin: 1rem;
-  border: 4px solid green;
-}
-.card img {
-  border-top-left-radius: var(---border-radius);
-  border-top-right-radius: var(---border-radius);
 }
 
-.card-picture {
-  height: 192.1px;
+.card-img {
+  border-top-left-radius: var(---border-radius);
+  border-top-right-radius: var(---border-radius);
+  background-image: url("photos/anthony.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 30vh;
+  height: 30vh;
 }
-.card-infos {
+
+.card-body {
+  font-size: 0.8rem;
+  text-align: center;
 }
-.card-infos > h2 {
+
+.card-title {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #f19c78;
   font-size: 1rem;
-  line-height: 1.3rem;
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
 }
-.card-infos p {
-  padding: 1em 1rem;
-  font-size: 0.8rem;
-  line-height: 1.3rem;
-  height: auto;
+
+.card-job {
+  font-size: 0.6rem;
+  font-style: italic;
+  background-color: var(---background-primary-color);
+  padding-bottom: 0.5rem;
 }
-.card-infos em {
-  font-size: 0.7rem;
-  color: rgb(95, 95, 95);
+.card-text {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
 }
 
 @media screen and (min-width: 480px) {
+  section p:first-child {
+    margin: 5rem 0 0rem 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
   .card {
     width: 40vh;
     height: 60vh;
     margin: 3rem;
   }
-  .card-picture {
-    height: 297.59px;
+  .card-img {
+    width: 40vh;
+    height: 40vh;
   }
 }
