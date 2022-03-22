@@ -110,4 +110,27 @@ section p:first-child {
     width: 40vh;
     height: 40vh;
   }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f19c78;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .card-job {
+    font-size: 0.6rem;
+    font-style: italic;
+    background-color: var(---background-primary-color);
+    padding-bottom: 0.5rem;
+  }
+  .card-text {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
 }
