@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Outsiders Restaurant</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets\css\style_index.css" />
-    <link rel="stylesheet" href="assets\css\style_carte.css" />
-    <link rel="stylesheet" href="assets\css\style_reservation.css" />
-    <link rel="stylesheet" href="assets\css\style_livredor.css" />
     <link rel="stylesheet" href="assets\css\style_notreEquipe.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -35,19 +32,37 @@
         <li><a href="#carte">La Carte</a></li>
         <li><a href="#reservation">Réservation</a></li>
         <li><a href="#livredor">Livre d'Or</a></li>
-        <li><a href="#notreEquipe">Notre équipe</a></li>
+        <li><a href="./notreEquipe.html">Notre équipe</a></li>
       </ul>
     </nav>
 
     <header>
-      <h1>{OUT}Siders</h1>
+      <!--Ne pas oublier de mettre un background-->
+      <h1>Notre équipe</h1>
     </header>
 
-    <!--Ma partie-->
+    <section>
+      <p>Ils vous accueillent à la brasserie {Out}Siders</p>
 
-    <!--Ma partie-->
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-img"></div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Anthony</h2>
+            <p class="card-job">Propriétaire du restaurant</p>
+            <p class="card-text">
+              J'aime jouer aux échecs, et par dessus tout j'adore les émojis
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <footer>
+      <script src="equipe.js"></script>
+    </section>
+
+    <footer style="position: relative">
       <div id="infos">
         <div class="bloc">
           <h3>NOUS TROUVER</h3>
@@ -86,9 +101,6 @@
       </div>
     </footer>
   </body>
-  <script type="text/javascript" src="assets\js\index.js"></script>
-  <script type="text/javascript" src="assets\js\carte.js"></script>
-  <script type="text/javascript" src="assets\js\livredor.js"></script>
-  <script type="text/javascript" src="assets\js\notreEquipe.js"></script>
-  <script type="text/javascript" src="assets\js\reservation.js"></script>
+
+  <script type="text/javascript" src="js\notreEquipe.js"></script>
 </html>

@@ -1,36 +1,48 @@
+function myFunction() {
+  var x = document.getElementById("ul-nav");
+  var z = document.getElementById("nav-var");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    navoscar.style.minHeight = "5rem";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+// ************************ JS Loop des cartes *************************
 const cards = document.querySelector(".cards");
 
 const staff = [
   {
-    picture: "photos/anthony.jpeg",
+    picture: "../assets/images/anthony.jpeg",
     name: "Anthony",
     job: "Propriétaire du restaurant",
     text: "J'aime le jeu d'échec, et par dessus tout : les émojis",
   },
 
   {
-    picture: "photos/jenna.jpg",
+    picture: "../assets/images/jenna.jpg",
     name: "Jenna",
-    job: "Cheffe cuisinère",
+    job: "Cheffe cuisinière",
     text: "Le gras c'est la vie, mais le sport aussi",
   },
 
   {
-    picture: "photos/chris.jpg",
+    picture: "../assets/images/chris.jpg",
     name: "Chris",
     job: "Cuisinier",
     text: "J'aime faire plaisir aux gens. Vegan les jours impairs de la semaine",
   },
 
   {
-    picture: "photos/andrea.jpg",
+    picture: "../assets/images/andrea.jpg",
     name: "Andrea",
     job: "Service en salle",
     text: "Toujours de bonne humeur!",
   },
 
   {
-    picture: "photos/tom.jpg",
+    picture: "../assets/images/tom.jpg",
     name: "Tom",
     job: "Service en salle",
     text: "Les frites maison sont à tomber!",
