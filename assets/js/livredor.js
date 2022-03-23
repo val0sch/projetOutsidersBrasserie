@@ -1,17 +1,4 @@
-//function myFunction() {
- //   var x = document.getElementById("ul-nav");
- //   var z = document.getElementById("nav-var");
- //   if (x.style.display === "block") {
-  //    x.style.display = "none";
- //     navoscar.style.minHeight = "5rem"
-
- //   } else {
-  //    x.style.display = "block";
-  //  }
- // }
-
-  
-let note = 0;
+ let note = 0;
 let etoiles = document.querySelectorAll('.etoile');
  
 etoiles.forEach((etoile, id) => {
