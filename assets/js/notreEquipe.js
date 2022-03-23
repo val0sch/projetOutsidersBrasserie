@@ -1,5 +1,4 @@
-
-  // ************************ JS Loop des cartes *************************
+// ************************ JS Loop des cartes *************************
   const cards = document.querySelector(".cards");
   
   const staff = [
@@ -76,4 +75,4 @@
   for (let i = 1; i < staff.length; i++) {
     createCard(staff[i].picture, staff[i].name, staff[i].job, staff[i].text);
   }
-  
+ 

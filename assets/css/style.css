@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 :root {
   ---background-first-color: #d6968a;
@@ -18,18 +19,21 @@
   ---fontsize--h2: 1.5rem;
   ---font-family: "Libre Baskerville", sans-serif;
 
+
   ---fontsize--h3: clamp(1.5rem, 2vh, rem);
 
   ---fontsize--footer: 0.6rem;
 
   ---border-radius: 3%;
   ---border-shadow: -10px 9px 29px -9px rgba(74, 74, 74, 0.87);
+
 }
 
 body {
   font-family: var(---font-family);
   color: var(---font-color-dark);
   min-height: 100%;
+
 
   background: hsla(28, 71%, 51%, 1);
 
@@ -49,6 +53,7 @@ body {
 }
 
 /* ********************************* NAV ********************************** */
+
 
 nav {
   box-shadow: var(---border-shadow);
@@ -101,6 +106,7 @@ a:hover {
 #iconburger {
   margin: 1rem 0;
   color: var(---font-color-dark);
+
 }
 
 /* **********************************HEADER************************************** */
@@ -138,6 +144,7 @@ header > h1 {
   }
 }
 
+
 /* ***************** FOOTER ****************** */
 
 footer {
@@ -174,12 +181,15 @@ footer > #infos {
   text-align: center;
   font-size: 0.6em;
   height: 3rem;
+
 }
+
 
 /* ****************************************** MEDIA DESKTOP********************************************** */
 
 @media screen and (min-width: 1030px) {
   /* ************************************** NAV **************************************** */
+
 
   nav {
     background-color: #d49798;
@@ -253,4 +263,12 @@ footer > #infos {
     border-top: dotted 0.5px black;
     font-size: 0.7rem;
   }
+
 }
+.copyright{
+    height: 2rem;/**/
+}
+
+
+
+} 
