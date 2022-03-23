@@ -7,8 +7,8 @@
   <script src="script.js"></script>
 
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
         /*
         principale : #F19C78
         secondaire : #EDD8D0
@@ -21,7 +21,7 @@
         }
         
         body *{
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Libre Baskerville', serif;
             font-weight: 400;
         }
 
@@ -41,7 +41,8 @@
             border:1px solid #444;
             border-radius: 5px;
             padding:1rem;
-            
+            border:2px solid #7f5b4d;
+            border-radius:1rem;
             background-color:#F19C78;
             font-size:1.0rem;
         }
@@ -58,7 +59,6 @@
 
         form input, textarea{
             padding:0.5rem;
-            border-radius:5px;
             border:2px solid #7f5b4d;
             border-radius:1rem;
         }
@@ -162,9 +162,14 @@
         
         </textarea>
 
-         <input type="submit" value="Envoyer la réservation">
+         <input type="submit" value="Envoyer la réservation "onclick="merci()">
 
     </form>
-</body>
-
+</body> 
+    <script>
+        function merci(){
+            alert('MErci de votre réservation.');
+        }
+        
+    </script>
 </html>
