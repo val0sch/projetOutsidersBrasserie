@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body>
@@ -44,29 +45,31 @@
     </header>
 
     <!--Ma partie-->
-    <form>
+    
+    <form id="validation">
+      <h1>Formulaire de rendez-vous</h1>
         <label for="nom">Votre nom</label>
-        <input type="text" id="nom" name="nom">
+        <input type="text" id="nom" name="nom" required>
 
         <label for="numero">Votre numéro</label>
-        <input type="tel" id="numero" name="numero" pattern="0[1-9](\d{2}){4}">
+        <input type="tel" id="numero" name="numero" pattern="0[1-9](\d{2}){4}" required>
         
         <label for="email">Votre email</label>
         <input type="email" id="email" name="email">
         
         
-        <div class="form-check-number">
-            <label for="gluten">Etes-vous allergique au gluten ?</label>
+        <div class="container-check">
+            <label for="gluten"><span>Etes-vous allergique au gluten ?</span></label>
             <input type="checkbox" id="gluten" name="gluten">
         
-            <label for="nombrePersonnes">Nombre de personnes</label>
-            <input type="number" id="nombrePersonnes" name="nombrePersonnes" min="1" max="10">
+            <label for="nombrePersonnes"><span>Nombre de personnes</span></label>
+            <input type="number" id="nombrePersonnes" name="nombrePersonnes" min="1" max="10" required>
         </div>
         
         
 
       
-        <div class="form-container">
+        <div class="container-datetime">
             <div>
             <label for="heure-reservation">A partir de :</label>
             <input type="time" id="heure-reservation" name="appt min=19:00" max="23:00" required>
@@ -82,11 +85,8 @@
 
         <label for="commentaire">Commentaire client</label>
         
-        <textarea rows=3>
-        
-        </textarea>
-
-         <input type="submit" value="Envoyer la réservation "onclick="merci()">
+        <textarea rows=3>Mettre un message ici si besoin</textarea>
+        <button id="submit" name="button">Envoyer la réservation</button>
 
     </form>
     <!--Ma partie-->

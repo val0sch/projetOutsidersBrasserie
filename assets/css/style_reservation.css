@@ -1,32 +1,53 @@
+/*
+---background-first-color: #d6968a;
+---background-second-color: #ddb2a0;
+---background-third-color: #e1c3b9;
+---background-fourth-color: #e2cfcec7;
+
+---font-color-light: #f8eaea;
+---font-color-dark: #111111;
+
+---font-family: "Libre Baskerville", sans-serif;
+---border-radius: 3%;
+---border-shadow: -10px 9px 29px -9px rgba(74, 74, 74, 0.87);
+*/
+
+/* Attention j'ai utilisé un CDN sur reservation.html*/
 form{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width:40%;
-    margin: 1rem auto;
-    border:1px solid #444;
-    border-radius: 5px;
+    width:80%;
+    margin: 15rem auto;
     padding:1rem;
-    border:2px solid #7f5b4d;
-    border-radius:1rem;
-    background-color:#F19C78;
+
+    border-radius: var(---border-radius);
+    box-shadow: var(---border-shadow);
+
+    background-color:var(---background-first-color);
     font-size:1.0rem;
+
+}
+
+form > h1{
+    text-align: center;
+    margin:1rem;
 }
 
 form label{
-    font-weight: 500;
     margin:0.5rem;
     width:auto;
-    color:#FFF3F3;
-    font-size:1.2rem;
-
+    color:var(---font-color-dark);
+    font-size:1.0rem;
+    font-weight: 700;
 }
 
 
-form input, textarea{
+form input, form textarea{
     padding:0.5rem;
-    border:2px solid #7f5b4d;
+    border:1px solid var(---font-color-dark);
     border-radius:1rem;
+    /*box-shadow: var(---border-shadow);*/
 }
 
 form input[type=date],form input[type=time]{
@@ -34,29 +55,37 @@ form input[type=date],form input[type=time]{
     min-width:10rem;
 }
 
+#gluten{
+    margin-right: 1rem;
+}
 
-form > input[type=submit]{
+#heure-reservation{
+    width:4rem;
+}
+
+form button{
     padding:1rem;
     border-radius:1rem;
-    border:1px solid #123;
+    border:1px solid var(---font-color-dark);
     margin:1rem auto;
     width:16rem;
 
     font-size: 1.0rem;
-    background-color:#123;
+    background-color:var(---font-color-dark);
     color:#F7E4DD;
 }
 
 
-form > input[type=submit]:hover{
-    background-color:#F7E4DD;
-    color:#123;
+form button:hover{
+    background-color:var(---background-third-color);
+    color:var(---font-color-dark);
     cursor: pointer;
 
 }
 
-.form-check-number{
+.container-check{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top:1rem;
@@ -64,19 +93,33 @@ form > input[type=submit]:hover{
     margin-left:1rem;
     
 }
-.form-container{
+
+.container-datetime{
     display:flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-between;
     margin:1rem auto;
-    width:90%;
 }
 
-.form-container > *{
-    flex:1;
-}
+
 
 .form-container > label{
     margin:1rem 1rem;
     text-align:right;
+}
+
+@media screen and (min-width: 1030px) {
+    form{
+         width:40%;
+    }
+
+    .container-check{
+        flex-direction:row;
+    }
+
+    .container-datetime{
+        flex-direction: row;
+        flex:1;
+    }
 }
