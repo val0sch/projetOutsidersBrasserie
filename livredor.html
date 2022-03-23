@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outsiders Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets\css\style_index.css" />
+    <link rel="stylesheet" href="assets\css\style_carte.css" />
+    <link rel="stylesheet" href="assets\css\style_reservation.css" />
+    <link rel="stylesheet" href="assets\css\style_livredor.css" />
+    <link rel="stylesheet" href="assets\css\style_notreEquipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <nav id="nav-var">
+      <a href="#accueil"
+        ><img class="logo_nav" src="assets\images\logoOutsider.png" alt="Logo"
+      /></a>
+      <a
+        id="iconburger"
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myFunction()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="ul-nav" id="ul-nav">
+        <li class="accueil"><a href="#accueil">Accueil</a></li>
+        <li><a href="#carte">La Carte</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+        <li><a href="#livredor">Livre d'Or</a></li>
+        <li><a href="#notreEquipe">Notre équipe</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>{OUT}Siders</h1>
+    </header>
+
+    <!--Ma partie-->
+
+    <form class = "form_livredor" action="/my-handling-form-page" method="post" action="#"> 
+        <div class="div_form">
+            <h3>Donnez nous une note</h3>
+            <div class="div_stars">
+                <input type="radio" name="note"> <span class="etoile">★</span>
+                <input type="radio" name="note"> <span class="etoile">★</span>
+                <input type="radio" name="note"> <span class="etoile">★</span>
+                <input type="radio" name="note"> <span class="etoile">★</span>
+                <input type="radio" name="note"> <span class="etoile">★</span>
+            </div>
+
+        <label for="nom">Nom</label><br>  
+        <input type="text" id="name" name="user_name"><br>  
+            
+        <!--<label for="prenom">Entrer le prénom</label><br>  
+        <input type="text" id="lastname" name="user_lastname"><br> -->
+        
+        <label for="comments">Commentaires</label>
+        <textarea id="comments" name="user_comments" rows="5" cols="33">
+            Ce fut un merveilleux moment ...
+        </textarea>  
+        <input class="bouton" type="submit" value="DONNER MON AVIS">
+    </div>
+     </form>
+    
+     <div class="class_carousel">
+        <input type="radio" name="position" checked />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <main id="carousel">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <main>
+    </div>
+
+
+ <!--Ma partie-->
+
+ <footer>
+    <div id="infos">
+      <div class="bloc">
+        <h3>NOUS TROUVER</h3>
+        <p>23, Rue des Poètes <br />44000 LYON Tram A - Victor Hugo</p>
+      </div>
+      <div class="bloc">
+        <h3>NOUS CONTACTER</h3>
+        <p>04 56 00 34 02</p>
+      </div>
+      <div class="bloc">
+        <h3>NOS HORAIRES</h3>
+        <p>Lundi - Samedi: 12h-14h30 / 19h-23h</p>
+      </div>
+      <div class="bloc">
+        <h3>SUIVEZ-NOUS</h3>
+        <br />
+        <a href="https://fr-fr.facebook.com"
+          ><img src="assets/images/icone.png" alt="icône facebook"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img
+            src="assets\images\instagram_online_social_media_icon-icons.com_71880_1.png"
+            alt="icône instagram"
+        /></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Copyright © 2022 {Out}Siders Restaurant - Design by team n°2
+        <br class="br" />
+        <a href="https://www.legalplace.fr/guides/mentions-legales/"
+          >Mentions légales</a
+        >
+      </p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="assets\js\index.js"></script>
+<script type="text/javascript" src="assets\js\carte.js"></script>
+<script type="text/javascript" src="assets\js\livredor.js"></script>
+<script type="text/javascript" src="assets\js\notreEquipe.js"></script>
+<script type="text/javascript" src="assets\js\reservation.js"></script>
+</html>
