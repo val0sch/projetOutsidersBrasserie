@@ -107,7 +107,7 @@ a:hover {
 
 header {
   height: 21rem;
-  background-image: url("../../assets/images/photo7.png");
+  background-image: url("../../assets/images/photobar-cafe.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 0%;
@@ -144,10 +144,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 footer img {
@@ -186,8 +182,8 @@ footer > #infos {
   /* ************************************** NAV **************************************** */
 
   nav {
-    background-color: var(---background-second-color); 
-    min-height: 6rem; /**/
+    background-color: #d49798;
+    min-height: 8rem; /**/
     flex-direction: row; /**/
     align-items: center;
     justify-content: space-around; /**/
@@ -208,13 +204,13 @@ footer > #infos {
   }
 
   .logo_nav {
-    max-width: 4.5rem; /**/
-    margin-top: 1rem; /**/
-    max-height: 4.5rem; /**/
+    max-width: auto; /**/
+    max-height: 6rem; /**/
   }
+
   .logo_nav:hover {
-    max-width: 4.5rem; /**/
-    max-height: 4.5rem; /**/
+    max-width: auto;
+    max-height: 6rem;
   }
 
   .accueil {
