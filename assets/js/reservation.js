@@ -1,11 +1,16 @@
-function myFunction() {
-    var x = document.getElementById("ul-nav");
-    var z = document.getElementById("nav-var");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-      navoscar.style.minHeight = "5rem"
+const iform = document.querySelector("#validation");
+iform.addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.history.back();
+    reservationOk();
+}, true);
 
-    } else {
-      x.style.display = "block";
-    }
-  }
+
+function reservationOk(){
+  Swal.fire({
+    title: 'Merci !',
+    text: 'Votre réservation à été effectuée',
+    icon: 'succes',
+    confirmButtonText: 'Merci.'
+  });
+}

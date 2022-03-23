@@ -1,0 +1,125 @@
+/*
+---background-first-color: #d6968a;
+---background-second-color: #ddb2a0;
+---background-third-color: #e1c3b9;
+---background-fourth-color: #e2cfcec7;
+
+---font-color-light: #f8eaea;
+---font-color-dark: #111111;
+
+---font-family: "Libre Baskerville", sans-serif;
+---border-radius: 3%;
+---border-shadow: -10px 9px 29px -9px rgba(74, 74, 74, 0.87);
+*/
+
+/* Attention j'ai utilisé un CDN sur reservation.html*/
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin: 15rem auto;
+    padding:1rem;
+
+    border-radius: var(---border-radius);
+    box-shadow: var(---border-shadow);
+
+    background-color:var(---background-first-color);
+    font-size:1.0rem;
+
+}
+
+form > h1{
+    text-align: center;
+    margin:1rem;
+}
+
+form label{
+    margin:0.5rem;
+    width:auto;
+    color:var(---font-color-dark);
+    font-size:1.0rem;
+    font-weight: 700;
+}
+
+
+form input, form textarea{
+    padding:0.5rem;
+    border:1px solid var(---font-color-dark);
+    border-radius:1rem;
+    /*box-shadow: var(---border-shadow);*/
+}
+
+form input[type=date],form input[type=time]{
+    margin:1rem auto;
+    min-width:10rem;
+}
+
+#gluten{
+    margin-right: 1rem;
+}
+
+#heure-reservation{
+    width:4rem;
+}
+
+form button{
+    padding:1rem;
+    border-radius:1rem;
+    border:1px solid var(---font-color-dark);
+    margin:1rem auto;
+    width:16rem;
+
+    font-size: 1.0rem;
+    background-color:var(---font-color-dark);
+    color:#F7E4DD;
+}
+
+
+form button:hover{
+    background-color:var(---background-third-color);
+    color:var(---font-color-dark);
+    cursor: pointer;
+
+}
+
+.container-check{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-left:1rem;
+    
+}
+
+.container-datetime{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-between;
+    margin:1rem auto;
+}
+
+
+
+.form-container > label{
+    margin:1rem 1rem;
+    text-align:right;
+}
+
+@media screen and (min-width: 1030px) {
+    form{
+         width:40%;
+    }
+
+    .container-check{
+        flex-direction:row;
+    }
+
+    .container-datetime{
+        flex-direction: row;
+        flex:1;
+    }
+}
