@@ -1,8 +1,10 @@
 const iform = document.querySelector("#validation");
 iform.addEventListener("submit", function(event) {
     event.preventDefault();
-    window.history.back();
+    // window.history.back();
+
     reservationOk();
+    iform.reset();
 }, true);
 
 
