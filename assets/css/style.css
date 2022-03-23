@@ -123,7 +123,7 @@ header {
 header > h1 {
   background-color: var(---background-second-color);
   box-shadow: var(---border-shadow);
-  border-radius: var(---border-radius);
+  border-radius: 0.5rem;
   padding: 0.5rem;
   opacity: 80%;
   color: var(---font-color-light);

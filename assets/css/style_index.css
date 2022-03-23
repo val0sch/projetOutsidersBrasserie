@@ -7,10 +7,10 @@ section{
     align-items: center;
     justify-content: center;
 }
-.class_section2 img{
+.cadre{
     box-shadow: var(---border-shadow);
-    border-radius: var(---border-radius);
-    width: 95vw;
+    border-radius: 0.5rem;
+    width: 90vw;
     height: 15rem;
     object-fit: cover;
     margin: 3rem 0 1rem 0;
@@ -26,30 +26,32 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
 
-
+.michelin{
+    max-width: 3rem;
 }
 .class_avis h1{
     text-align: center;
     padding: 0 1rem;
 }
 
-.avis p{
+.avis{
     text-align: center;
 }
 
 .class_avis div{
     background-color: var(---background-second-color);
     box-shadow: var(---border-shadow);
-    border-radius: var(---border-radius);
+    border-radius: 0.5rem;
     margin: 1rem 1rem;
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-height: 30rem;
+    min-height: 17rem;
+    
     
 }
 
@@ -60,4 +62,23 @@ section{
 
 .class_avis .avis_cache{
     display: none;
+}
+
+@media screen and (min-width: 1030px) {
+    /* ************************************** NAV **************************************** */
+    
+
+
+
+.class_avis .avis_cache{
+    display: flex;
+    text-align: center;
+}    
+.class_avis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 }
