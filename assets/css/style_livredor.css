@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+    ---background-primary-color : #F19C78;
+    ---background-secondary-color : #EDD8D0;
+    ---background-third-color : #F7E4DD;
+    ---background-fourth-color :  #FFF3F3;
+    ---font-color :  rgb(17, 17, 17);
+    ---fontsize--h : 1.5rem;
+    ---fontsize--nav : 1rem;
+    ---font-family : 'Poppins', sans-serif;
+    ---border-radius : 3%;
+    ---border-shadow : -10px 9px 29px -9px rgba(74,74,74,0.87);
+        
+}
+
+body{
+    font-family: var(---font-family);
+    font-weight: 300;
+    color : var(---font-color);
+    width: 100%;
+    
+}
+
+
+
+/* ************************************** NAV **************************************** */
+ li>a{
+    text-decoration: none;
+    color: var(---font-color);
+    font-weight: 400;
+    
+ }
+
+li{
+    padding: 0.3em;
+    
+}
+
+a:hover{
+    color: var(---background-fourth-color);
+}
+
+
+nav {
+    display: flex;
+    background-color: var(---background-primary-color);   
+    font-size: var(---fontsize--nav); 
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    
+}
+
+
+.logo_nav {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+ul {
+    list-style: none;
+    justify-content: end;
+    margin-right: 1.5rem;
+}
+
+/* ****************************************HEADER************************************************** */
+
+header { /** Si on veut faire un bg image et le centrer*/
+    height: 23rem;
+    background-image: url('../../assets/images/photo7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    opacity: 80%;
+    display: flex;
+    
+}
+
+
+
+.logo_header{
+    
+    max-height: 25rem;
+    width: 14rem;
+    max-width: 25rem;
+    margin: auto;
+}
+
+
+/* *******************************************FOOTER***********************************************\ */
+
+footer {
+    background-color: var(---background-primary-color);
+    /** Pour fixer notre footer vers le bas
+    position:absolute;
+    bottom: 0;*/
+    width:100%;
+   
+}
+
+footer>img {
+    width: 30px;
+    height: 30px;
+}
+footer>#infos{
+    
+    height:70%;
+    display :flex;
+    flex-direction : column;
+    gap: 1em;
+    font-size: 0.8em;
+    padding: 2em;
+
+
+}
+.bloc {
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.bloc>h3{
+    color: var(---background-third-color);
+}
+
+
+
+.container{
+    background-color: var(---background-secondary-color);
+    font-size: 0.6em;
+}
+
+
+.div_stars {
+    display: flex;
+}
+
+.div_stars input {
+  display: none;
+}
+
+.etoile {
+  color: grey;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.gold {
+  color: gold;
+}
+ 
+.grey {
+  color: grey;
+}
+ 
+.black {
+  color: black;
+}
+
+.bouton  {
+    display: block;
+    width: -webkit-fill-available;
+    height: 3rem;
+    background-color: var(---background-primary-color);
+   
+    
+}
+
+.div_form {
+  background-color: var(---background-secondary-color);
+  border-radius: 0.7rem;
+
+  margin-top: 40px;
+    margin-bottom: 32px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-left-width: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    border-bottom-width: 40px;
+    padding-bottom: 20px;
+}
+
+input, textarea {
+  width: -webkit-fill-available;
+  border-radius: 0.4rem;
+
+}
+
+.class_carousel {
+  display: flex;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: #ffd670;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: #e9ff70;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+
+
+
+
+/* ****************************************** MEDIA DESKTOP********************************************** */
+
+
+@media screen and (min-width: 480px) {
+
+    ul {
+        display: flex;
+        font-size: var(---fontsize--h);
+        gap: 2em;
+        padding-right: 2rem;
+        
+
+    }
+
+    footer>#infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    
+
+     
+      
+
+}
