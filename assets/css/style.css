@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +16,7 @@
   ---fontsize--nav: clamp(1rem, 2.3vw, 1.5rem);
   ---fontsize--h1: clamp(2rem, 5vw, 4rem);
   ---fontsize--h2: 1.5rem;
-  ---fontsize--h3: clamp()
+  ---fontsize--h3: clamp(1.5rem, 2vh, rem);
   ---fontsize--footer: 0.6rem;
 
   ---font-family: "Libre Baskerville", sans-serif;
@@ -29,9 +28,7 @@
 body {
   font-family: var(---font-family);
   color: var(---font-color-dark);
-  width: 100%;
-
-  background: hsla(28, 71%, 51%, 1);
+  min-height: 100%;
 
   background: linear-gradient(
     360deg,
@@ -54,7 +51,7 @@ body {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DB7C29", endColorstr="#D3989B", GradientType=1 );
 }
 
-/* ************************************** NAV **************************************** */
+/* ********************************* NAV ********************************** */
 
 nav {
   box-shadow: var(---border-shadow);
@@ -109,11 +106,11 @@ a:hover {
   color: var(---font-color-dark);
 }
 
-/* ****************************************HEADER************************************************** */
+/* **********************************HEADER************************************** */
 
 header {
   height: 21rem;
-  background-image: url("../assets/images/photo7.png");
+  background-image: url("../../assets/images/photobar-cafe.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 0%;
@@ -145,14 +142,12 @@ header > h1 {
 }
 /* **************** FOOTER ***************** */
 
+/* ***************** FOOTER ****************** */
+
 footer {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-
-  position: absolute; /*Ces 3 élements, pour positionner le footer en bas de la page*/
-  bottom: 0;
-  width: 100%;
 }
 
 footer img {
@@ -191,8 +186,8 @@ footer > #infos {
   /* ************************************** NAV **************************************** */
 
   nav {
-    background-color: var(---background-second-color); /**/
-    min-height: 6rem; /**/
+    background-color: #d49798;
+    min-height: 8rem; /**/
     flex-direction: row; /**/
     align-items: center;
     justify-content: space-around; /**/
@@ -213,13 +208,13 @@ footer > #infos {
   }
 
   .logo_nav {
-    max-width: 4.5rem; /**/
-    margin-top: 1rem; /**/
-    max-height: 4.5rem; /**/
+    max-width: auto; /**/
+    max-height: 6rem; /**/
   }
+
   .logo_nav:hover {
-    max-width: 4.5rem; /**/
-    max-height: 4.5rem; /**/
+    max-width: auto;
+    max-height: 6rem;
   }
 
   .accueil {
@@ -245,7 +240,7 @@ footer > #infos {
     align-items: baseline;
     font-size: var(---fontsize--h);
     line-height: 2rem;
-    border-top: 0.5px dotted black;
+    border-top: dotted 0.5px black;
   }
   .bloc > a > img {
     margin: 0;
@@ -254,7 +249,6 @@ footer > #infos {
   .bloc:last-child {
     line-height: 1rem;
   }
-
   .br {
     display: none; /**/
   }
