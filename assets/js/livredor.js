@@ -39,7 +39,8 @@ const formval = document.querySelector('.form_livredor');
 
 formval.addEventListener('submit', function(event) {
   event.preventDefault();
-  myFunctionButton(event);
+//  myFunctionButton(event); *
+  console.log("bjr");
 }, true);
 
 
