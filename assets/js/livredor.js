@@ -39,17 +39,14 @@ const formval = document.querySelector('.form_livredor');
 
 formval.addEventListener('submit', function(event) {
   event.preventDefault();
-//  myFunctionButton(event); *
-  reservationOk();
+  confirmationAvis();
   formval.reset();
 }, true);
 
-function reservationOk(){
+function confirmationAvis(){
   Swal.fire({
-    title: 'Merci !',
-    text: 'Votre réservation à été effectuée',
-    icon: 'succes',
-    confirmButtonText: 'Merci.'
+    text: 'Merci pour votre commentaire',
+    confirmButtonText: 'A bientôt'
   });
 }
 

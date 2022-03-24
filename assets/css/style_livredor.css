@@ -27,41 +27,25 @@
 .bouton  {
     display: block;
     width: -webkit-fill-available;
-    height: 3rem;
+    height: 2.5rem;
     background-color: var(---background-primary-color);
    
     
 }
 
 .div_form {
-  background-color: var(---background-secondary-color);
   border-radius: 0.7rem;
-  margin-top: 40px;
-    margin-bottom: 32px;
-    margin-left: 25px;
-    margin-right: 25px;
-    border-left-width: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    border-bottom-width: 40px;
-    padding-bottom: 20px;
+  padding:1rem;
+  
 }
 
 .form_livredor {
-  background-color: var(---background-secondary-color);
-  border-radius: 0.7rem;
-  border: solid;
-  margin-top: 40px;
-    margin-bottom: 32px;
-    margin-left: 25px;
-    margin-right: 25px;
-    border-left-width: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    border-bottom-width: 40px;
-    padding-bottom: 20px;
+    border-radius: var(---border-radius);
+    box-shadow: var(---border-shadow);
+    background-color:var(---background-first-color);
+    font-size:1.0rem;
+    margin: 2rem auto;
+    padding:1rem;
 }
 
 input, textarea {
@@ -71,8 +55,11 @@ input, textarea {
 }
 
 .card_avis {
- /** display: flex; */
   width: -webkit-fill-available;
+}
+
+.avis_cache {
+  margin: 2rem;
 }
 
 .logo_triv {
@@ -80,7 +67,9 @@ input, textarea {
   height: 3rem;
 }
 
-
+.nom {
+  height: 3rem;
+}
 /** css bouton */
 
 @media screen and (min-width: 1030px) {
@@ -100,7 +89,7 @@ input, textarea {
   }
 
   .form_livredor {
-    width: 800px;
+    width: 50rem;
     margin: auto;
   }
 
