@@ -1,14 +1,15 @@
  let note = 0;
 let etoiles = document.querySelectorAll('.etoile');
+
  
 etoiles.forEach((etoile, id) => {
-  etoile.addEventListener('click', (elem) => {
+  etoile.addEventListener('click', (event) => {
     note = (id + 1);
-    elem.target.classList.remove('black');
-    elem.target.classList.add('gold');
+    event.target.classList.remove('black');
+    event.target.classList.add('gold');
   });
-  etoile.addEventListener('mouseenter', (elem) => {
-    let cible = elem.target.classList;
+  etoile.addEventListener('mouseenter', (event) => {
+    let cible = event.target.classList;
     cible.remove('grey');
     cible.remove('gold');
     cible.add('black');
@@ -28,3 +29,17 @@ etoiles.forEach((etoile, id) => {
     }
   });
 });
+
+// js bouton pour soumettre les avis des clients
+
+
+
+const formval = document.querySelector('.form_livredor');
+
+
+formval.addEventListener('submit', function(event) {
+  event.preventDefault();
+  myFunctionButton(event);
+}, true);
+
+

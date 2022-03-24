@@ -45,47 +45,49 @@
 
     <!--Ma partie-->
 
-    <form class = "form_livredor" action="/my-handling-form-page" method="post" action="#"> 
-        <div class="div_form">
-            <h3>Donnez nous une note</h3>
-            <div class="div_stars">
-                <input type="radio" name="note"> <span class="etoile">★</span>
-                <input type="radio" name="note"> <span class="etoile">★</span>
-                <input type="radio" name="note"> <span class="etoile">★</span>
-                <input type="radio" name="note"> <span class="etoile">★</span>
-                <input type="radio" name="note"> <span class="etoile">★</span>
-            </div>
+<form class = "form_livredor" action="/my-handling-form-page" method="post" action="#"> 
+  <h3>Donnez nous une note</h3>
+    <div class="div_stars">
+      <input type="radio" name="note"> <span class="etoile">★</span>
+      <input type="radio" name="note"> <span class="etoile">★</span>
+      <input type="radio" name="note"> <span class="etoile">★</span>
+      <input type="radio" name="note"> <span class="etoile">★</span>
+      <input type="radio" name="note"> <span class="etoile">★</span>
+    </div>
 
-        <label for="nom">Nom</label><br>  
-        <input type="text" id="name" name="user_name"><br>  
-            
-        <!--<label for="prenom">Entrer le prénom</label><br>  
-        <input type="text" id="lastname" name="user_lastname"><br> -->
+    <label for="nom">Nom</label><br>  
+    <input type="text" id="name" name="user_name"><br>  
+
+    <label for="comments">Commentaires</label>
+    <textarea id="comments" name="user_comments" rows="5" cols="33">
+            Dites-nous tout ...
+    </textarea>  
         
-        <label for="comments">Commentaires</label>
-        <textarea id="comments" name="user_comments" rows="5" cols="33">
-            Ce fut un merveilleux moment ...
-        </textarea>  
-        <input class="bouton" type="submit" value="DONNER MON AVIS">
-    </div>
-     </form>
+    <input class="bouton" type="submit" value="DONNER MON AVIS">
+
+</form>
+  
+<div class="div_form">   
+  
+  <div class="card_avis">
     
-     <div class="class_carousel">
-        <input type="radio" name="position" checked />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <main id="carousel">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <main>
+    <div class="avis_cache" class="avis">
+      <h1>JulienL <br> ⭐⭐⭐⭐⭐</h1>
+      <img class="logo_triv" src="assets\images\chris.jpg" alt="Logo_triv">
+      <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel nulla
+          veritatis ratione dicta deleniti."</p>
     </div>
 
-
+    <div class="avis_cache" class="avis">
+      <h1>Marie Baert <br> ⭐⭐⭐</h1>
+      <img class="logo_triv" src="assets\images\andrea.jpg" alt="Logo_triv">
+      <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel nulla
+          veritatis ratione dicta deleniti."</p>
+    </div>
+    
+  </div>
+    
+</div>
  <!--Ma partie-->
 
  <footer>
