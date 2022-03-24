@@ -87,4 +87,22 @@ input, textarea {
   .div_form {
     display: flex;
   }
+
+  .bouton {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .card_avis {
+    display: flex;
+  }
+
+  .form_livredor {
+    width: 800px;
+    margin: auto;
+  }
+
+
 }
