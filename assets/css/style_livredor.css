@@ -1,0 +1,109 @@
+.div_stars {
+    display: flex;
+}
+
+.div_stars input {
+  display: none;
+}
+
+.etoile {
+  color: grey;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.gold {
+  color: gold;
+}
+ 
+.grey {
+  color: grey;
+}
+ 
+.black {
+  color: black;
+}
+
+.bouton  {
+    display: block;
+    width: -webkit-fill-available;
+    height: 2.5rem;
+    background-color: var(---font-color-dark);
+    color:var(---font-color-light);
+    margin-top:1rem;
+    
+}
+
+.bouton:hover  {
+  background-color: var(---font-color-light);
+  color:var(---font-color-dark);
+  cursor:pointer;
+}
+
+.div_form {
+  border-radius: 0.7rem;
+  padding:1rem;
+  
+}
+
+.form_livredor {
+    border-radius: var(---border-radius);
+    box-shadow: var(---border-shadow);
+    /*background-color:var(---background-first-color);*/
+    font-size:1.0rem;
+    margin: 2rem auto;
+    padding:1rem;
+}
+
+input, textarea {
+  width: -webkit-fill-available;
+  border-radius: 0.4rem;
+
+}
+
+.card_avis {
+  width: -webkit-fill-available;
+}
+
+.avis_cache {
+  margin: 2rem;
+}
+
+.logo_triv {
+  width: auto;
+  height: 3rem;
+}
+
+.nom {
+  height: 3rem;
+}
+/** css bouton */
+
+@media screen and (min-width: 1030px) {
+  .div_form {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .bouton {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top:1rem !important;
+  
+  }
+
+  .card_avis {
+    display: flex;
+  }
+
+  .form_livredor {
+    width: 50rem;
+    margin: 4rem auto;
+  }
+
+
+}

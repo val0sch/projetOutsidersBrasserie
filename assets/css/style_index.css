@@ -1,0 +1,89 @@
+/* *******************************************Oscar***********************************************\ */
+
+section{
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cadre{
+    box-shadow: var(---border-shadow);
+    border-radius: 0.5rem;
+    width: 90vw;
+    height: 15rem;
+    object-fit: cover;
+    margin: 3rem 0 1rem 0;
+}
+.histoire_text{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+.class_avis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.michelin{
+    max-width: 3rem;
+}
+.class_avis h1{
+    text-align: center;
+    padding: 0 1rem;
+    flex:1;
+}
+
+.avis{
+    text-align: center;
+    
+}
+
+.class_avis div{
+    background-color: var(---background-second-color);
+    box-shadow: var(---border-shadow);
+    border-radius: 0.5rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 17rem;
+    
+    flex: 1;
+    
+    
+}
+
+.class_avis div img{
+    width: 5rem;
+    margin-top: 0.8rem;
+}
+
+.class_avis .avis_cache{
+    display: none;
+}
+
+@media screen and (min-width: 1030px) {
+    /* ************************************** NAV **************************************** */
+    
+
+
+
+.class_avis .avis_cache{
+    display: flex;
+    text-align: center;
+}    
+.class_avis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+}
