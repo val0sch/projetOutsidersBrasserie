@@ -75,6 +75,9 @@ input, textarea {
 @media screen and (min-width: 1030px) {
   .div_form {
     display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
   }
 
   .bouton {
