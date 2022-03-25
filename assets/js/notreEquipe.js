@@ -10,7 +10,7 @@
     },
   
     {
-      picture: "../assets/images/jenna.jpg",
+      picture: "assets/images/jenna.jpg",
       name: "Jenna",
       job: "Cheffe cuisinière",
       text: "Le gras c'est la vie, mais le sport aussi",
