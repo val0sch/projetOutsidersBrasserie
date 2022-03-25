@@ -31,19 +31,19 @@ body {
   min-height: 100%;
 
   background: linear-gradient(
-    360deg,
+    270deg,
     hsla(28, 71%, 51%, 0.8) 0%,
     hsla(357, 40%, 71%, 1) 100%
   );
 
   background: -moz-linear-gradient(
-    360deg,
+    270deg,
     hsla(28, 71%, 51%, 0.8) 0%,
     hsla(357, 40%, 71%, 1) 100%
   );
 
   background: -webkit-linear-gradient(
-    360deg,
+    270deg,
     hsla(28, 71%, 51%, 0.8) 0%,
     hsla(357, 40%, 71%, 1) 100%
   );
@@ -186,7 +186,7 @@ footer > #infos {
   /* ************************************** NAV **************************************** */
 
   nav {
-    background-color: #d49798;
+    background-color:#e39659;
     min-height: 8rem; /**/
     flex-direction: row; /**/
     align-items: center;

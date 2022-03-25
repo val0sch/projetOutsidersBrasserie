@@ -28,9 +28,16 @@
     display: block;
     width: -webkit-fill-available;
     height: 2.5rem;
-    background-color: var(---background-primary-color);
-   
+    background-color: var(---font-color-dark);
+    color:var(---font-color-light);
+    margin-top:1rem;
     
+}
+
+.bouton:hover  {
+  background-color: var(---font-color-light);
+  color:var(---font-color-dark);
+  cursor:pointer;
 }
 
 .div_form {
@@ -42,7 +49,7 @@
 .form_livredor {
     border-radius: var(---border-radius);
     box-shadow: var(---border-shadow);
-    background-color:var(---background-first-color);
+    /*background-color:var(---background-first-color);*/
     font-size:1.0rem;
     margin: 2rem auto;
     padding:1rem;
@@ -85,6 +92,8 @@ input, textarea {
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-top:1rem !important;
+  
   }
 
   .card_avis {
@@ -93,7 +102,7 @@ input, textarea {
 
   .form_livredor {
     width: 50rem;
-    margin: auto;
+    margin: 4rem auto;
   }
 
 
